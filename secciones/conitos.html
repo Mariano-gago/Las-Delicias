@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Delicias... Conitos</title>
+    <meta name="description" content="Conoce una nueva experiencia de sabor en alfajores artesanales, conitos rellenos de dulce de leche, barritas de arroz y galletas">
+    <meta name="keywords"  content="Alfajores, Conitos, barritas, galletas">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 " >
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand titulo" href="index.html"><img class="logo" src="../imagenes/logo.jpg">Las Delicias de Maria Cecilia</a>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="margin collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link opciones" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link opciones" href="historia.html">Historia</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle opciones" href="./secciones/productos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Productos
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="alfajores.html">Alfajores</a>
+                                            <a class="dropdown-item" href="conitos.html">Conitos</a>
+                                            <a class="dropdown-item" href="arroz.html">Barritas de arroz</a>
+                                            <a class="dropdown-item" href="galletas.html">Galletas</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link opciones" href="sucursales.html">Sucursales</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link opciones" href="contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="fondo">
+        <div class="container">
+            <Section class="row">
+                <div class="col-6" class="card" style="width: 18rem;">
+                    <img src="../imagenes/conochocolate.png" class="card-img-top" alt="Conito Chocolate" title="Conito de Chocolate">
+                    <div class="card-body">
+                        <h5 class="card-title">CONITO DE CHOCOLATE</h5>
+                        <p class="card-text">Delicado bocadito de Dulce de Leche, cubiertos con el más suave chocolate semiamargo.
+                            Presentación:
+                            Unidad - Caja x6 / x12 unidades</p>
+                            <form class="form-inline">
+                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option selected>Elegir...</option>
+                                    <option value="1">Caja x6</option>
+                                    <option value="2">Caja x12 unidades</option>
+                                    <option value="3">CaJa x12 unidades mixta</option>
+                                </select>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-comprar" data-toggle="modal" data-target="#staticBackdrop">
+                                    Comprar
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">MUCHAS GRACIAS POR SU COMPRA!!</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Por favor, complete el siguiente formulario para completar su pedido.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-comprar__modificado" data-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-comprar__modificado">Formulario</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+
+                <div class="col-6" class="card" style="width: 18rem;">
+                        <img src="../imagenes/conoblanco.png" class="card-img-top" alt="Conito Blanco" title="Conito de chocolate blanco">
+                    <div class="card-body">
+                        <h5 class="card-title">CONITO DE CHOCOLATE BLANCO</h5>
+                        <p class="card-text">Delicado bocadito de Dulce de Leche, cubiertos con el más fino chocolate blanco.
+                            Presentación: Unidad - Caja x6 / x12 unidades.</p>
+                            <form class="form-inline">
+                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option selected>Elegir...</option>
+                                    <option value="1">Caja x6</option>
+                                    <option value="2">Caja x12 unidades</option>
+                                    <option value="3">CaJa x12 unidades mixta</option>
+                                </select>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-comprar" data-toggle="modal" data-target="#staticBackdrop">
+                                    Comprar
+                                </button>
+                            </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footergrid">
+        
+        <div class="titulo1">
+            <a href="../index.html"><img class="logo_footer " src="../imagenes/logo.jpg">Las Delicias de Maria Cecilia</a>  
+        </div>
+
+        <div class="info">
+            <ul>
+                <li><a class="infoColor" href="contacto.html">Sugerencias</a></li>
+                <li>Formas de pago</li>
+            </ul>         
+        </div>
+    
+
+    <section class="redes">
+        <div>
+            <h3>Nuestras Redes</h3>
+        </div>
+        <div>
+            <ul class="redes1">
+                <li><a class="infoColor" href="https://twitter.com/"><span class="iconify" data-icon="fa-brands:twitter-square" data-inline="false"></span></a></li>
+                <li><a class="infoColor" href="https://instagram.com/"><span class="iconify" data-icon="brandico:instagram-filled" data-inline="false"></span></a></li>
+                <li><a class="infoColor" href="https://facebook.com/"><span class="iconify" data-icon="logos:facebook" data-inline="false"></span></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="contacto" >
+        <h3>Contactanos</h3>
+        <p>Telefono: (+5411) 4782-4167</p>
+        <p>Lavalle 1807. San Martin. Provincia de Buenos Aires.</p>
+        
+    </section>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

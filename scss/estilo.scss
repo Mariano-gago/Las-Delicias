@@ -1,0 +1,295 @@
+
+@import "fonts";
+@import "header";
+@import "mediaqueries";
+@import "footer";
+
+* {
+    color: inherit;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0; }
+
+
+
+// background pagina//
+.fondo {
+    background-color:#a85232;
+}
+
+/**Carousell**/
+.carousel-inner{
+    margin-bottom: 50px;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.sr-only {
+    color: orange;
+}
+
+
+/**Acordions**/
+
+
+
+.card-header{
+    font-size: 2em;
+    
+}
+
+
+/**start grid index**/
+
+.grid{
+    display:grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    justify-content: center;
+    grid-template-areas: 
+    "imagen1 imagen2"
+    "imagen3 imagen4"
+    ;
+}
+
+
+@for $i from 1 through 4 {
+    .imagen-#{$i} {
+        grid-area: imagen + $i;
+        justify-self: center;
+        border-radius: 20px;
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.transform{
+    outline: none;
+    transition: transform 0.5s;
+    &:hover{ 
+    transform:scale(1.2);
+    }
+}
+/** end grid index**/
+
+
+
+
+
+
+
+/**Start contacto**/
+.background_contacto{
+    background-image:url(../imagenes/fondo_contacto.jpg);
+    padding-bottom: 50px;
+    .contacto1{
+        color:whitesmoke;
+        margin-top: 50px;
+        font-family:$fuente-secundaria;
+        font-size: 3em;
+    }
+    .cuadro{
+        border:1px solid black;
+        font-family: $fuente-secundaria;
+        text-align: center;
+        padding:50px 50px 50px 50px;
+        background-image: url(../imagenes/fondo-descripcion.jpg);
+    }
+    .container_flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.form_flex{
+    display:flex;
+    flex-direction: column;
+    font-family: $fuente-secundaria;
+    font-size: 1.12em;
+    border:2px solid black;
+    margin: 50px 100px 50px 100px;
+    padding: 50px 100px 50px 100px;
+    background-image: url(../imagenes/fondo-descripcion.jpg);
+}
+
+
+
+@for $i from 1 through 2 {
+    #boton-#{$i} {
+        font-size: 1.5em;
+        margin-right: 5px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+    }
+}
+
+.boton{
+    align-self: center;
+    margin-top: 20px;
+    #boton-1:hover{
+        background-color: wheat;
+        border: whitesmoke;
+    }
+    #boton-2:hover{
+        background-color: wheat;
+        border: whitesmoke;
+    }
+}
+
+
+/**end contacto**/
+
+
+
+/**start sucursales**/
+
+.background_sucursales{
+    background-image: url(../imagenes/fondo_contacto.jpg);
+    padding-top:50px;
+}
+
+
+.locales{
+    text-align: center;
+    font-size: 3.12em;
+    font-weight: bold;
+    font-family: $fuente-secundaria;
+    color: whitesmoke;
+    padding-top: 50px;
+    margin:10px 0 70px 0;
+}
+
+.adress{
+    text-align: center;
+    border: 1px solid black;
+    background-image: url(../imagenes/fondo-descripcion.jpg);
+}
+
+article{ 
+        h3{
+        font-size: 1.8em;
+        font-family: $fuente-secundaria;
+}
+}
+
+.sucursal_grid{
+    display:grid;
+    grid-template-columns:50% 50% ;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 70px;
+    justify-items: center;
+    padding-bottom: 50px;
+    grid-template-areas: 
+    "capital_federal martinez"
+    "san_isidro tigre"
+    "marDelPlata cordoba";
+}
+
+@each $adress in capital_federal, martinez, san_isidro, tigre, marDelPlata, cordoba{
+    .#{$adress}{
+        grid-area: #{$adress};
+    }
+}
+/** end Sucursales**/
+
+
+
+/** Start pedidos**/
+
+.titulo_pedidos{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+
+}
+
+.back_pedidos{
+    background-color:#a85232 ;
+    padding-bottom: 50px;
+}
+
+/**end pedidos**/
+
+
+/**Start historia**/
+.pasteleros{
+    h2{
+    font-family: $fuente-secundaria;
+    font-size: 3em;
+    }
+    p{
+    font-size: 1em;
+    font-weight: bold;
+    }
+}
+
+/**end historia**/
+
+
+/**start productos-alfajores-conitos**/
+
+
+.card-img-top{
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.card-body{
+    height: 200px;
+    width: 500px;
+    background-color:rgb(243, 208, 132);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    .card-title {
+    text-align: center;
+    font-weight: bold;
+    }
+    .card-text{
+    font-size: 0.9em;
+    }
+    
+}
+
+.btn-comprar{
+    color:white;
+    font-size: 1.5em;
+    background-color:#a85232;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+/**end productos-alfajores-conitos-barritas-galletas**/
+
+/**start modal**/
+.modal-content{
+    .modal-title{
+        font-size: 1.5em;
+    }
+    .modal-body p{
+        text-align: center;
+        font-size: 1em;
+    }
+    .modal-footer{
+        justify-content: space-around;
+    }
+
+}
+
+.btn-comprar__modificado{
+    color:white;
+    font-size: 1.5em;
+    background-color:#a85232;
+}
+
+/** End modal**/
+
+
+
