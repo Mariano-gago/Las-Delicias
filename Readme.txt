@@ -12,7 +12,7 @@ Paso 2: Se realizo una busqueda de fotos, fuentes y colores acordes para la pagi
 Paso 3: Se utilizan las propiedades de GRID, FLEX y bootstrap 4.06 para la confeccion de la pagina.
 Paso 5: Se realizan los cambios necesarios para que la pagina sea responsive.
 Paso 4: Se agrega SASS vinculando el CSS anterior.
-Paso 5: Subida al servidor.
+Paso 5: Subida al servidor. https://lasdeliciasdemariacecilia.000webhostapp.com/
 
 
 
