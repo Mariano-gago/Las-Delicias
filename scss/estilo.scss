@@ -4,6 +4,8 @@
 @import "mediaqueries";
 @import "footerflex";
 
+$back-color: #a85232;
+
 * {
     color: inherit;
     text-decoration: none !important;
@@ -13,7 +15,7 @@
 
 
 
-// background pagina//
+// background main//
 .fondo {
     background-color:#a85232;
 }
@@ -30,17 +32,50 @@
 }
 
 
+//start accordion
 
 
 
+.card--mod{
+    border: transparent;
+    background-color: $back-color;
+    .card-header{
+        background-color: $back-color ;
+    }
+    .btn__mod{
+        background-image: url(../imagenes/fondo-descripcion.jpg);
+        font-size: 2.5em;
+        color: black;
+        font-family: $fuente-principal;
+        margin-left: 10%;
 
-.card-header{
-    font-size: 2em;
+    }
+    .card-body__mod{
+        background-color: rgb(243, 208, 132);
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 2em;
+        color: black;
+        font-family: $fuente-principal;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .btn__mod{
+        font-size: 1em !important;
+        margin-left: 0rem;
+    }
+    .prueba{
+        font-size: 0.75em;
+    }
     
 }
 
 
-//start grid index//
+
+
+
+//start grid//
 
 .grid{
     display:grid;
@@ -76,10 +111,162 @@
 }
 // end grid index//
 
+//start productos-alfajores-conitos//
+
+
+.card{
+    margin: auto;
+    background-color: $back-color;
+    border: transparent;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+    .card-body{
+        background-color:rgb(243, 208, 132);
+        border-radius: 10px;
+        margin-bottom: 10%;
+        padding-bottom: 0px;
+        width: 20rem;
+    }
+    .card-img-top{
+        width: 20rem;
+    }
+    .card-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .card-text{
+        font-size: 1em;
+    }
+    .img-mod{
+        width: 320px;
+        height: 230px;
+        border-radius: 10%;
+    }
+}
 
 
 
 
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .card{
+        justify-content: center;
+        margin: auto;
+        
+    }
+    .card-body{
+        width: 10rem;
+    }
+    .card-img-top{
+        width: 15rem;
+    }
+    
+}
+
+.form-inline{
+    justify-content: center;
+    select{
+        height: 40px;
+    }
+}
+
+.btn-comprar{
+    color:white;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    background-color: $back-color;
+    margin-top: 2%;
+    a{
+        color:white;
+    }
+}
+
+
+
+//end productos-alfajores-conitos-barritas-galletas//
+
+//start modal//
+.modal-content{
+    .modal-title{
+        font-size: 1.5em;
+    }
+    .modal-body p{
+        text-align: center;
+        font-size: 1em;
+    }
+    .modal-footer{
+        justify-content: space-around;
+    }
+
+}
+
+// End modal//
+
+//Start historia//
+.pasteleros{
+    h2{
+    font-family: $fuente-secundaria;
+    font-size: 2.5em;
+    text-align: center;
+    }
+    p{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    }
+}
+
+
+img{
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    }
+
+
+//end historia//
+
+//start sucursales//
+
+.background_sucursales{
+    background-image: url(../imagenes/fondo_contacto.jpg);
+    padding-top:50px;
+}
+
+
+.locales{
+    text-align: center;
+    font-size: 3.12em;
+    font-weight: bold;
+    font-family: $fuente-secundaria;
+    color: whitesmoke;
+    padding-top: 50px;
+    margin:10px 0 70px 0;
+}
+
+.adress{
+    text-align: center;
+    border: 1px solid black;
+    background-image: url(../imagenes/fondo-descripcion.jpg);
+}
+
+article{ 
+        h3{
+        font-size: 1.8em;
+        font-family: $fuente-secundaria;
+}
+}
+
+.sucursal_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+//end Sucursales//
 
 
 //Start contacto//
@@ -146,148 +333,84 @@
 
 //end contacto//
 
+//Start Formulario Compra//
+
+.form-group{
+    margin-top: 30px;
+    margin-right: 20px;
+}
 
 
-//start sucursales//
-
-.background_sucursales{
+.background-form{
     background-image: url(../imagenes/fondo_contacto.jpg);
-    padding-top:50px;
 }
 
 
-.locales{
-    text-align: center;
-    font-size: 3.12em;
-    font-weight: bold;
-    font-family: $fuente-secundaria;
-    color: whitesmoke;
-    padding-top: 50px;
-    margin:10px 0 70px 0;
-}
-
-.adress{
-    text-align: center;
-    border: 1px solid black;
-    background-image: url(../imagenes/fondo-descripcion.jpg);
-}
-
-article{ 
-        h3{
-        font-size: 1.8em;
-        font-family: $fuente-secundaria;
-}
-}
+//End Formulario Compra//
 
 
+//Start Mediaqueries//
 
-
-.sucursal_flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-//end Sucursales//
-
-
-
-
-
-
-//Start historia//
-.pasteleros{
-    h2{
-    font-family: $fuente-secundaria;
-    font-size: 2.5em;
-    text-align: center;
-    }
-    p{
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    }
-}
-
-
-img{
-    margin-top: 2%;
-    width: 100%;
-    height: auto;
-    }
-
-
-//end historia//
-
-
-//start productos-alfajores-conitos//
-
-
-.margin_card{
-    margin-left: auto;
-}
-.card-img-top{
-    margin-top: 10%;
-    width: 80%;
-    height: 50%;
-    border-radius: 5%;
-}
-
-.card-body{
-    height: auto;
-    width: 80%;
-    background-color:rgb(243, 208, 132);
-    border-radius: 10px;
-    margin-bottom: 10%;
-    padding-bottom: 0px;
-    .card-title {
-    text-align: center;
-    font-weight: bold;
-    }
-    
-}
-
-.form-inline{
-    justify-content: center;
-    select{
-        height: 40px;
-    }
-}
-
-.btn-comprar{
-    color:white;
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    background-color:#a85232;
-    margin-top: 2%;
-}
-
-//end productos-alfajores-conitos-barritas-galletas//
-
-//start modal//
-.modal-content{
-    .modal-title{
-        font-size: 1.5em;
-    }
-    .modal-body p{
-        text-align: center;
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .pasteleros{
+        h2{
         font-size: 1em;
+        }
+        p{
+        font-size: 0.5em;
+        }
     }
-    .modal-footer{
-        justify-content: space-around;
+    .titulo{
+        font-size: 1.3em;
     }
-
+    .carousel-close{
+        display: none;
+    }
+    .card-mod{
+        margin-top: 5px;
+        margin-bottom: 50px;
+        h5{
+            font-size: 0.75em;
+        }
+        p{
+            font-size: 0.2em;
+        }
+        button{
+            font-size: 1em;
+        }
+        img{
+            margin-top: 5px;
+        }
+    }
 }
 
-.btn-comprar__modificado{
-    color:white;
-    font-size: 1.5em;
-    background-color:#a85232;
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .logo_footer{
+        display: none;
+        }
+    .info{
+        display: none;
+    }
+    .redes{
+        font-size: 0.5em;
+    }
+    .img-cookies, .img-cookies2, .img-cookies3 {
+        border-radius: 5%;
+        height: 273px;
+        width: 320px;
+    }
 }
 
-// End modal//
+
+
+
+
+
+
+
+
+
 
 
 

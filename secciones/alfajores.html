@@ -13,9 +13,9 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid"><!--start header con bootstrap-->
             <div class="row">
-                <div class="col-md-12 col-sm-12 " >
+                <div class="col-lg-12 col-md-12 col-sm-12" >
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand titulo" href="../index.html"><img class="logo" src="../imagenes/logo.jpg">Las Delicias de Maria Cecilia</a>
                         
@@ -53,16 +53,17 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> <!--End Header-->
     <main class="fondo">
         <div class="container">
             <Section class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 card-mod margin_card " style="width: 18rem;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card" >
                         <img alt="Alfajor" title="Chocolate" class="card-img-top" src="../imagenes/chocolate.png" />
-                    <div class="card-body">
-                        <h5 class="card-title">ALFAJOR DE CHOCOLATE</h5>
-                        <p class="card-text">Alfajor relleno de dulce de leche y cobertura de puro chocolate semiamargo.
-                            Presentación: Unidad - Caja x6 / x12 unidades</p>
+                        <div class="card-body">
+                            <h5 class="card-title">ALFAJOR DE CHOCOLATE</h5>
+                            <p class="card-text">Alfajor relleno de dulce de leche y cobertura de puro chocolate semiamargo.
+                                Presentación: Unidad - Caja x6 / x12 unidades</p>
                             <form class="form-inline">
                                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                     <option selected>Elegir...</option>
@@ -74,36 +75,16 @@
                                 <button type="button" class="btn btn-comprar" data-toggle="modal" data-target="#staticBackdrop">
                                     Comprar
                                 </button>
-                                
-                                <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="staticBackdropLabel">MUCHAS GRACIAS POR SU COMPRA!!</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>Por favor, complete el siguiente formulario para completar su pedido.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-comprar__modificado" data-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-comprar__modificado">Formulario</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </form>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 card-mod margin_card" class="card" style="width: 18rem;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card">
                         <img src="../imagenes/nuez.png" class="card-img-top" title="Nuez" alt="Nuez">
-                    <div class="card-body">
-                        <h5 class="card-title">ALFAJOR DE NUEZ</h5>
-                        <p class="card-text">Alfajor de dulce de leche, cajú y nueces, cubierto de chocolate blanco. Presentación: Unidad - Caja x6 / x12 unidades.</p>
+                        <div class="card-body">
+                            <h5 class="card-title">ALFAJOR DE NUEZ</h5>
+                            <p class="card-text">Alfajor de dulce de leche, cajú y nueces, cubierto de chocolate blanco. Presentación: Unidad - Caja x6 / x12 unidades.</p>
                             <form class="form-inline">
                                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                     <option selected>Elegir...</option>
@@ -116,17 +97,18 @@
                                     Comprar
                                 </button>
                             </form>
+                        </div>
                     </div>
                 </div>
             </section>
-
             <Section class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 card-mod margin_card" class="card" style="width: 18rem;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card">
                         <img src="../imagenes/merengue.png" class="card-img-top" alt="Merengue" title="Merengue">
-                    <div class="card-body">
-                        <h5 class="card-title">ALFAJOR DE MERENGUE</h5>
-                        <p class="card-text">Alfajor relleno con Dulce de leche y cubierto con Merengue.
-                        Presentacion: Unidad - caja x6 / x12 unidades.</p>
+                        <div class="card-body">
+                            <h5 class="card-title">ALFAJOR DE MERENGUE</h5>
+                            <p class="card-text">Alfajor relleno con Dulce de leche y cubierto con Merengue.
+                            Presentacion: Unidad - caja x6 / x12 unidades.</p>
                             <form class="form-inline">
                                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                     <option selected>Elegir...</option>
@@ -138,16 +120,17 @@
                                 <button type="button" class="btn btn-comprar" data-toggle="modal" data-target="#staticBackdrop">
                                     Comprar
                                 </button>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 card-mod margin_card" class="card" style="width: 18rem;">
-                    <img src="../imagenes/blanco1.png" class="card-img-top" alt="Blanco" title="Blanco">
-                    <div class="card-body">
-                        <h5 class="card-title">ALFAJOR DE CHOCOLATE BLANCO</h5>
-                        <p class="card-text">Alfajor relleno con Dulce de leche y cubierto con Chocolate Blanco.
-                            Presentaciones: Unidad - caja x6 / x12 unidades.</p>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../imagenes/blanco1.png" class="card-img-top" alt="Blanco" title="Blanco">
+                        <div class="card-body">
+                            <h5 class="card-title">ALFAJOR CHOCOLATE BLANCO</h5>
+                            <p class="card-text">Alfajor relleno con Dulce de leche y cubierto con Chocolate Blanco.
+                            Presentacion: Unidad - caja x6/x12 unidades.</p>
                             <form class="form-inline">
                                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                     <option selected>Elegir...</option>
@@ -157,19 +140,41 @@
                                 </select>
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-comprar" data-toggle="modal" data-target="#staticBackdrop">
-                                    Comprar
+                                Comprar
                                 </button>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">MUCHAS GRACIAS POR SU COMPRA!!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Por favor, complete el siguiente formulario para finalizar su pedido.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-comprar" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-comprar"><a href="formulario.html">Formulario</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Modal-->
     </main>
     <footer>
         <div class="titulo1">
-            <a href="index.html"><img class="logo_footer" src="../imagenes/logo.jpg">Las Delicias de Maria Cecilia</a>  
+            <a href="../index.html"><img class="logo_footer" src="../imagenes/logo.jpg">Las Delicias de Maria Cecilia</a>  
         </div>
-        <section  class="footer_flex">
+        <section  class="footer_flex"><!--footer con flex-->
                 <div class="info">
                     <ul>
                         <li><a class="infoColor" href="../secciones/contacto.html">Sugerencias</a></li>
@@ -177,9 +182,9 @@
                         <li>Seguimiento de pedido</li>
                     </ul>         
                 </div>
-            <article class="redes">
+            <article>
                 <div>
-                    <h3>Nuestras Redes</h3>
+                    <h3  class="redes">Nuestras Redes</h3>
                 </div>
                 <div>
                     <ul class="redes1">

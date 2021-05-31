@@ -56,7 +56,7 @@
     </header>
     <main class="fondo">
 
-        <section class="container">
+        <section class="container"> <!--Start section Carousel-->
                     <div class="carousel-close">
                         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
@@ -83,20 +83,39 @@
                             </div>
                         </div>
                     </div>
+        </section> <!--End section carousel-->
+        <section>
+            <div class="accordion" id="accordionExample"> <!--Start Accordion-->
+                <div class="card--mod">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn__mod text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <p> Conoce una nueva experiencia en alfajores!!</p>               
+                                <p>Elegi el que mas te gusta!</p>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body__mod text-center">
+                            <p class=" prueba">Con tu primera compra te regalamos una caja de 6 conitos a eleccion!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--End Accordion-->
         </section>
-        <section class="grid">
+        <section class="grid"><!--start Grid-->
             <a class="position imagen-1" href="./secciones/alfajores.html"><img class="imagen-1 transform" src="./imagenes/alfajoresChoconombre.png" title="alfajores" alt="alfajores"></a>
             <a class="position imagen-2" href="./secciones/conitos.html"><img class="imagen-2 transform" src="./imagenes/conitos2.webp" title="conitos" alt="conitos"></a>    
 
             <a class="position imagen-3" href="./secciones/arroz.html"><img class="imagen-3 transform" src="./imagenes/arroz.jpg" title="arroz" alt="Arroz"></a>   
             <a class="position imagen-4" href="./secciones/galletas.html"><img class="imagen-4 transform" src="./imagenes/galletas1.png" title="galletas" alt="Galletas"></a>
-        </section>
+        </section><!--End Grid-->
     </main>
     <footer>
             <div class="titulo1">
                 <a href="index.html"><img class="logo_footer" src="./imagenes/logo.jpg">Las Delicias de Maria Cecilia</a>  
             </div>
-            <section  class="footer_flex">
+            <section  class="footer_flex"><!--footer con flex-->
                     <div class="info">
                         <ul>
                             <li><a class="infoColor" href="./secciones/contacto.html">Sugerencias</a></li>
@@ -104,9 +123,9 @@
                             <li>Seguimiento de pedido</li>
                         </ul>         
                     </div>
-                <article class="redes">
+                <article>
                     <div>
-                        <h3>Nuestras Redes</h3>
+                        <h3 class="redes">Nuestras Redes</h3>
                     </div>
                     <div>
                         <ul class="redes1">

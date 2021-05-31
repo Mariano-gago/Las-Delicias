@@ -117,15 +117,15 @@ footer {
     .footer_flex li a {
       color: black; }
   .footer_flex .redes {
-    font-weight: bold; }
+    font-weight: 1.2em; }
   .footer_flex .redes1 {
     display: flex;
     justify-content: space-evenly; }
-    .footer_flex .redes1 li .iconify {
+    .footer_flex .redes1 li {
       height: 20px;
       width: 20px; }
-    .footer_flex .redes1 a {
-      color: black; }
+  .footer_flex a {
+    color: black; }
 
 .contacto, .telefono, .direccion {
   margin: 0px;
@@ -137,6 +137,27 @@ footer {
   justify-content: center; }
   .derechos p {
     font-size: 0.7em; }
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .logo_footer {
+    display: none; }
+  .info {
+    display: none; }
+  .footer_flex .redes {
+    font-size: 0.7em; }
+  .redes1 li {
+    height: 20px;
+    width: 20px; }
+  .img-cookies, .img-cookies2, .img-cookies3 {
+    border-radius: 5%;
+    height: 273px;
+    width: 320px; }
+  .contacto, .telefono, .direccion {
+    margin: 0px;
+    font-size: 0.7em;
+    color: black; }
+  .derechos p {
+    font-size: 0.5em; } }
 
 * {
   color: inherit;
@@ -156,8 +177,31 @@ footer {
 .sr-only {
   color: orange; }
 
-.card-header {
-  font-size: 2em; }
+.card--mod {
+  border: transparent;
+  background-color: #a85232; }
+  .card--mod .card-header {
+    background-color: #a85232; }
+  .card--mod .btn__mod {
+    background-image: url(../imagenes/fondo-descripcion.jpg);
+    font-size: 2.5em;
+    color: black;
+    font-family: "Dancing Script", cursive;
+    margin-left: 10%; }
+  .card--mod .card-body__mod {
+    background-color: #f3d084;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2em;
+    color: black;
+    font-family: "Dancing Script", cursive; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .btn__mod {
+    font-size: 1em !important;
+    margin-left: 0rem; }
+  .prueba {
+    font-size: 0.75em; } }
 
 .grid {
   display: grid;
@@ -199,6 +243,108 @@ footer {
   transition: transform 0.5s; }
   .transform:hover {
     transform: scale(1.2); }
+
+.card {
+  margin: auto;
+  background-color: #a85232;
+  border: transparent;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem; }
+  .card .card-body {
+    background-color: #f3d084;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding-bottom: 0px;
+    width: 20rem; }
+  .card .card-img-top {
+    width: 20rem; }
+  .card .card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em; }
+  .card .card-text {
+    font-size: 1em; }
+  .card .img-mod {
+    width: 320px;
+    height: 230px;
+    border-radius: 10%; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .card {
+    justify-content: center;
+    margin: auto; }
+  .card-body {
+    width: 10rem; }
+  .card-img-top {
+    width: 15rem; } }
+
+.form-inline {
+  justify-content: center; }
+  .form-inline select {
+    height: 40px; }
+
+.btn-comprar {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  background-color: #a85232;
+  margin-top: 2%; }
+  .btn-comprar a {
+    color: white; }
+
+.modal-content .modal-title {
+  font-size: 1.5em; }
+
+.modal-content .modal-body p {
+  text-align: center;
+  font-size: 1em; }
+
+.modal-content .modal-footer {
+  justify-content: space-around; }
+
+.pasteleros h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5em;
+  text-align: center; }
+
+.pasteleros p {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center; }
+
+img {
+  margin-top: 2%;
+  width: 100%;
+  height: auto; }
+
+.background_sucursales {
+  background-image: url(../imagenes/fondo_contacto.jpg);
+  padding-top: 50px; }
+
+.locales {
+  text-align: center;
+  font-size: 3.12em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  padding-top: 50px;
+  margin: 10px 0 70px 0; }
+
+.adress {
+  text-align: center;
+  border: 1px solid black;
+  background-image: url(../imagenes/fondo-descripcion.jpg); }
+
+article h3 {
+  font-size: 1.8em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.sucursal_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .background_contacto {
   background-image: url(../imagenes/fondo_contacto.jpg);
@@ -252,92 +398,42 @@ footer {
     background-color: wheat;
     border: whitesmoke; }
 
-.background_sucursales {
-  background-image: url(../imagenes/fondo_contacto.jpg);
-  padding-top: 50px; }
+.form-group {
+  margin-top: 30px;
+  margin-right: 20px; }
 
-.locales {
-  text-align: center;
-  font-size: 3.12em;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: whitesmoke;
-  padding-top: 50px;
-  margin: 10px 0 70px 0; }
+.background-form {
+  background-image: url(../imagenes/fondo_contacto.jpg); }
 
-.adress {
-  text-align: center;
-  border: 1px solid black;
-  background-image: url(../imagenes/fondo-descripcion.jpg); }
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .pasteleros h2 {
+    font-size: 1em; }
+  .pasteleros p {
+    font-size: 0.5em; }
+  .titulo {
+    font-size: 1.3em; }
+  .carousel-close {
+    display: none; }
+  .card-mod {
+    margin-top: 5px;
+    margin-bottom: 50px; }
+    .card-mod h5 {
+      font-size: 0.75em; }
+    .card-mod p {
+      font-size: 0.2em; }
+    .card-mod button {
+      font-size: 1em; }
+    .card-mod img {
+      margin-top: 5px; } }
 
-article h3 {
-  font-size: 1.8em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-.sucursal_flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
-.pasteleros h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5em;
-  text-align: center; }
-
-.pasteleros p {
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center; }
-
-img {
-  margin-top: 2%;
-  width: 100%;
-  height: auto; }
-
-.margin_card {
-  margin-left: auto; }
-
-.card-img-top {
-  margin-top: 10%;
-  width: 80%;
-  height: 50%;
-  border-radius: 5%; }
-
-.card-body {
-  height: auto;
-  width: 80%;
-  background-color: #f3d084;
-  border-radius: 10px;
-  margin-bottom: 10%;
-  padding-bottom: 0px; }
-  .card-body .card-title {
-    text-align: center;
-    font-weight: bold; }
-
-.form-inline {
-  justify-content: center; }
-  .form-inline select {
-    height: 40px; }
-
-.btn-comprar {
-  color: white;
-  margin-bottom: 5px;
-  font-size: 1.5em;
-  background-color: #a85232;
-  margin-top: 2%; }
-
-.modal-content .modal-title {
-  font-size: 1.5em; }
-
-.modal-content .modal-body p {
-  text-align: center;
-  font-size: 1em; }
-
-.modal-content .modal-footer {
-  justify-content: space-around; }
-
-.btn-comprar__modificado {
-  color: white;
-  font-size: 1.5em;
-  background-color: #a85232; }
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .logo_footer {
+    display: none; }
+  .info {
+    display: none; }
+  .redes {
+    font-size: 0.5em; }
+  .img-cookies, .img-cookies2, .img-cookies3 {
+    border-radius: 5%;
+    height: 273px;
+    width: 320px; } }
