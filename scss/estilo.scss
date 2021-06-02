@@ -1,7 +1,6 @@
 
 @import "fonts";
 @import "header";
-@import "mediaqueries";
 @import "footerflex";
 
 $back-color: #a85232;
@@ -48,6 +47,7 @@ $back-color: #a85232;
         color: black;
         font-family: $fuente-principal;
         margin-left: 10%;
+        margin-right: 10%;
 
     }
     .card-body__mod{
@@ -62,10 +62,10 @@ $back-color: #a85232;
 
 @media screen and (min-width: 320px) and (max-width: 768px){
     .btn__mod{
-        font-size: 1em !important;
+        font-size: 0.75em !important;
         margin-left: 0rem;
     }
-    .prueba{
+    .regalo{
         font-size: 0.75em;
     }
     

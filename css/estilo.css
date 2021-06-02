@@ -49,42 +49,6 @@ header {
   .dropdown-menu .dropdown-item {
     font-weight: bold; }
 
-@media (max-width: 640px) {
-  .titulo {
-    font-size: 1em; } }
-
-@media screen and (min-width: 320px) and (max-width: 600px) {
-  .carousel-close {
-    display: none; } }
-
-/**media for historia**/
-@media screen and (min-width: 320px) and (max-width: 600px) {
-  .pasteleros h2 {
-    font-size: 1em; }
-  .pasteleros p {
-    font-size: 0.5em; } }
-
-/** media for productos*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .card-mod {
-    margin-top: 5px;
-    margin-bottom: 50px; }
-    .card-mod h5 {
-      font-size: 1em; }
-    .card-mod p {
-      font-size: 0.7em; }
-    .card-mod button {
-      font-size: 1em; }
-    .card-mod img {
-      margin-top: 5px; } }
-
-/** media for footer**/
-@media screen and (min-width: 320px) and (max-width: 600px) {
-  .logo_footer {
-    display: none; }
-  .info {
-    display: none; } }
-
 /** Footer Flex**/
 footer {
   background-color: burlywood;
@@ -187,7 +151,8 @@ footer {
     font-size: 2.5em;
     color: black;
     font-family: "Dancing Script", cursive;
-    margin-left: 10%; }
+    margin-left: 10%;
+    margin-right: 10%; }
   .card--mod .card-body__mod {
     background-color: #f3d084;
     margin-left: 10%;
@@ -198,9 +163,9 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .btn__mod {
-    font-size: 1em !important;
+    font-size: 0.75em !important;
     margin-left: 0rem; }
-  .prueba {
+  .regalo {
     font-size: 0.75em; } }
 
 .grid {
